@@ -69,6 +69,8 @@ class TaichiEnv:
             cv2.imshow('x', img[..., ::-1])
             cv2.waitKey(1)
         elif mode == 'plt':
+            import matplotlib
+            matplotlib.use('TkAgg')
             import matplotlib.pyplot as plt
             plt.imshow(img)
             plt.show()
