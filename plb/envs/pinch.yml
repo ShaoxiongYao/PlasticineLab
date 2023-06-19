@@ -1,5 +1,6 @@
 SIMULATOR:
-  yield_stress: 50.
+  E: 50.
+  yield_stress: 500.
   ground_friction: 100.
 
 SHAPES:
@@ -24,8 +25,8 @@ ENV:
     target_path: envs/assets/Pinch3D-v1.npy
 
 RENDERER:
-  camera_pos: (0.5, 2.5, 2.2)
-  camera_rot: (0.8, 0.)
+  camera_pos: (0.5, 1.0, 1.0)
+  camera_rot: (1.0, 0.)
 VARIANTS:
   - ENV:
       loss:
